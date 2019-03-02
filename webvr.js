@@ -47,7 +47,7 @@
 
   VRManager.prototype.requestAnimationFrame = function(cb) {
     if (this.vrDisplay) {
-      return this.vrDisplay.requestAnimationFrame(cb);
+      return this.vrDisplay.renderer.animate( render );
     }
   }
 
